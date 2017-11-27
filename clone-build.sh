@@ -52,12 +52,19 @@ elif [ "${OS}" = "Linux" ] ; then
 		echo "Docker is installed, but docker-compose is not, installing docker-compose now"
 		yum -y install docker-compose
 	fi
+	echo "Checking if docker is started.."
+	if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 )); then
+		echo "Docker is already started"
+	else
+		service $service start
+	fi
 		if "docker-compose build" ; then
 			echo "Docker image is built, you can start container with docker-compose up"
 			exit 0
 		else 
 			echo "docker-compose build failed"
 			exit 1
+		fi
     elif [ -f /etc/debian_version ] ; then
 	#TODO Add Debian support
         echo "Detected Debian based distribution"
