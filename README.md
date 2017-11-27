@@ -6,13 +6,13 @@
 - **You can use this script to host any website with static content (my portfolio is just an example)**
 - You must be root in order to successfully execute this script
 
-### Image on docker hub
+### Using image on docker hub
 #### You can run image directly from docker hub (but then you would have to manually change my portfolio website files with yours), example below :
 ```bash
    docker run -p 80:80 allexki/portfolio:nginx
 ```
 
-### Steps for Red hat based distributions
+### Manual build for Red hat based distributions
 ```bash
     git clone https://github.com/aleksandar-babic/DockerPortfolio.git && cd DockerPortfolio
     chmod +x clone-build.sh # Add executable permission to script
@@ -21,7 +21,7 @@
 ```
 > You can add restart: always to docker-compose.yml in order to get container automatically restarted all the time.
 
-### Steps for Debian based distributions
+### Manual build for Debian based distributions
 ```bash
     git clone https://github.com/aleksandar-babic/DockerPortfolio.git && cd DockerPortfolio
     mkdir portfolio # Manually create webroot
