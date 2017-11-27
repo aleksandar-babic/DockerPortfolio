@@ -59,7 +59,7 @@ elif [ "${OS}" = "Linux" ] ; then
 	else
 		service $service start
 	fi
-		if "docker-compose build" ; then
+		if docker-compose build ; then
 			echo "Docker image is built, you can start container with docker-compose up"
 			exit 0
 		else 
