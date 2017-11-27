@@ -4,6 +4,7 @@
 ### NOTE
 - Script currently works on Red hat based linux distributions only, Debian based distributions will be supported later. (There will be how to for those below, until script officially support them)
 - **You can use this script to host any website with static content (my portfolio is just an example)**
+- You must be root in order to successfully execute this script
 
 ### Steps for Red hat based distributions
 ```bash
