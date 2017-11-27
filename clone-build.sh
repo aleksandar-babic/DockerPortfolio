@@ -24,6 +24,7 @@ OS=`uname -s`
 REV=`uname -r`
 MACH=`uname -m`
 REPOSITORY='https://github.com/aleksandar-babic/portfolio'
+service=docker
 
 if [ "${OS}" = "SunOS" ] ; then
     OS=Solaris
