@@ -7,7 +7,7 @@
 - You must be root in order to successfully execute this script
 
 ### Image on docker hub
-#### You can run image directly from docker hub (but then you would have to manually change my portfolio website files with yours ) , example below :
+#### You can run image directly from docker hub (but then you would have to manually change my portfolio website files with yours), example below :
 ```bash
    docker run -p 80:80 allexki/portfolio:nginx
 ```
