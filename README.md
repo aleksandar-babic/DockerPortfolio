@@ -6,6 +6,12 @@
 - **You can use this script to host any website with static content (my portfolio is just an example)**
 - You must be root in order to successfully execute this script
 
+### Image on docker hub
+# You can run image directly from docker hub (but then you would have to manually change my portfolio website files with yours ) , example below :
+```bash
+   docker run -p 80:80 allexki/portfolio:nginx
+```
+
 ### Steps for Red hat based distributions
 ```bash
     git clone https://github.com/aleksandar-babic/DockerPortfolio.git && cd DockerPortfolio
