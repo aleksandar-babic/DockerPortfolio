@@ -1,0 +1,6 @@
+  nginx:
+    build: .
+    volumes:
+      - ./portfolio:/usr/share/nginx/html:z
+    ports:
+      - "80:80"
